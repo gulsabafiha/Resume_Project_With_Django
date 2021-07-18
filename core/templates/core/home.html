@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mx-5">
+  <div class="text-center mt-5">
+    <img
+      src="{% static 'core/images/fiha.jpg' %}"
+      alt="Profilepic"
+      class="img-thumbnail"
+      width="250px"
+      height="150px"
+    />
+  </div>
+  <div class="text-white mt-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text-indent: 100px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at delectus
+        maxime. Possimus, eaque ullam? Dolores aut ratione vitae vel, sunt
+        temporibus id hic eius ea, ex, sit omnis nobis?Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Maxime officiis eos similique.
+        Corrupti hic officia magni suscipit quod quae recusandae sequi, esse
+        facere, numquam soluta deserunt amet temporibus totam. Dolorum?
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
+{% endblock content %}
